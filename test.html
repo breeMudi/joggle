@@ -33,15 +33,22 @@
           <br />
           The function should then return the converted string
         </p>
-        <textarea
-          type="text"
-          id="word"
-          placeholder="say something ..."
-          style="font-size: 20px"
-        ></textarea>
+        <div id="textdiv">
+          <textarea
+            type="text"
+            id="word"
+            placeholder="say something ..."
+            style="font-size: 22px"
+            maxlength="200"
+          ></textarea>
+        </div>
+        <div id="countBoard">
+          <p><span id="wordCount">0</span> WORDS</p>
+        </div>
+
         <!-- <button>click me</button> -->
-        <div>
-          <p id="answer">ijfoijpro;ji</p>
+        <div class="answer-wrap">
+          <p id="answer">ijfo;ji</p>
         </div>
       </section>
     </main>

@@ -1,4 +1,5 @@
 const inputs = document.getElementById('word')
+let wordCount;
 let placeHolder = []
 let finalWord;
 
@@ -6,6 +7,7 @@ function animate(){
     requestAnimationFrame(animate)
     combineString()
     document.getElementById('answer').innerText = finalWord
+    document.getElementById('wordCount').innerText = wordCount
 }
 
 function strToArray () {
@@ -26,6 +28,7 @@ function combineString () {
     strToArray()
     convertString()
     placeHolder.length > 0? finalWord=placeHolder.join(''): finalWord = 'no words'
+    wordCount = placeHolder.length 
     placeHolder.length = 0
 }
 animate()

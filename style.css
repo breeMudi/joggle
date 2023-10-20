@@ -41,4 +41,18 @@ section {
     font-size: 40px;
     display: flex;
     flex-wrap: wrap;
+    width: 70%;
+}
+.answer-wrap, #textdiv{
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+
+#countBoard {
+    position: fixed;
+    top: 35%;
+    right: 20%;
+    background-color: grey;
+    padding: 30px;
 }
